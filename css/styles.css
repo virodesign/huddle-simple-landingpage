@@ -1,0 +1,374 @@
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+    /* Thanks for this advice, I was struggling how best approach to do this. I added the waved images in the previous and following section at top and bottom respectively . Would be fine to     */
+
+
+:root{
+--primary:hsl(322, 100%, 66%);
+--secondary:hsl(192, 100%, 9%);
+--neutral:hsl(207, 100%, 98%);
+}
+
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: .01rem;
+    line-height: 2rem;
+    color: var(--secondary);
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    width:90%;
+}
+
+
+.flex{
+    display: flex;
+}
+
+/* TYPOGRAPHY */
+
+
+h1,h2,h3,p{
+    margin-top: 0;
+    
+}
+
+h1{
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-family: 'Poppins', sans-serif;     
+}
+
+h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+.stat-number{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 6rem;
+    font-weight:700;
+    margin-bottom: 0;
+}
+
+.stat-text{
+ 
+    margin-top:2em;
+    font-size: 1.4rem;
+    color: #909090;
+
+}
+
+.content-paragraph{
+    margin-bottom: 0;
+    padding-bottom: 2em;
+}
+
+/* UI and Illustration*/
+  
+.btn{
+
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10em;
+    padding: .3rem 1.5rem;    
+}
+
+.btn--ghost{
+    font-size: 1rem;
+    color:var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn--primary{
+
+font-size: 1rem;    
+font-weight: 600;
+color: #fff;
+background: var(--primary);
+padding: .8rem 4rem;
+margin: 3em 0;
+box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+button{
+  
+    display: inline-block;
+    padding: .8em 2.2em;
+    cursor: pointer;
+    margin-top: 2em;
+    border: 0;
+    border-radius: .2rem;
+    font-size:1.125rem;
+    background: var(--primary);
+    color: white;
+}
+
+.btn--primary:focus,.btn--primary:hover,
+button:hover, button:focus{
+
+    background-color: #03B7FA;
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus{
+    color: #03B7FA;
+    border: 1px solid #03B7FA;
+}
+
+
+.stat-icon{
+    position: relative;
+    right:5em;
+    padding: 1.5em;
+}
+
+
+.illustration{
+    width: 350px;
+    margin: 2em 0;
+}
+
+
+/* SECTIONS */
+
+header{
+    padding: 2em 0;
+    margin-bottom: 6em;
+}
+
+.logo-huddle{
+    height: 30px;
+}
+
+.logo-section{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-img{
+    margin:2em 0;
+    max-width: 800px;
+    width: 80vw;
+}
+
+
+.stat{
+    padding: 2em;
+}
+
+.wave-one{
+    background: url(/images/bg-section-top-mobile-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 2em;
+}
+
+.wave-two{
+    background: 
+    url(/images/bg-section-bottom-mobile-1.svg),
+    url(/images/bg-section-top-mobile-2.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: contain;
+    padding: 6em 0;
+}
+
+.wave-three{
+
+background: 
+url(/images/bg-section-bottom-mobile-2.svg),
+url(/images/bg-footer-top-mobile.svg);
+background-repeat: no-repeat;
+background-position: top, bottom;
+background-size: contain;
+padding: 6em 0;   
+
+}
+
+
+.section{
+padding: 6em 0;    
+}
+
+
+.section-bg{
+background: #F6FBFF;
+padding:0;
+
+}
+
+footer{
+    background: #00252F;
+    color: white;
+}
+
+.footer-newsletter{
+    text-align: left;
+}
+
+.final-cta{
+    padding-bottom: 4em;
+}
+
+
+form{
+    text-align: right;
+    padding: 2em 0;
+}
+
+
+input{
+    padding:1.2em;
+    border-radius: .25em;
+    border:0;
+    width: 100%;   
+}
+
+::placeholder{
+    font-size: 1rem;
+    color:#cccccc;
+}
+
+.footer-contact{
+    text-align: left;
+    width: 90%;
+}
+
+.logo-white{
+    padding: 1em 0;
+}
+
+
+.contact-social-media{
+    padding:1em 0;
+}
+
+.contact-social-media img{
+margin-right: .5em;
+height: 40px;
+}
+
+.contact-info{
+    display: flex;
+    align-items: baseline;
+   
+}
+
+.contact-info img{
+    margin-right: 1em;
+    height: 20px;
+}
+
+.attribution{
+    font-size: .3rem;
+    background: ;
+    margin-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:800px){
+
+  .hero-text{
+     width: 60%;
+  }
+
+  .section-stats{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .wave-one{
+    background: url(/images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom:6em;
+}
+
+.wave-two{
+    background: 
+    url(/images/bg-section-bottom-desktop-1.svg),
+    url(/images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: contain;
+    padding: 8em 0;
+}
+
+
+.wave-three{
+
+    background: 
+    url(/images/bg-section-bottom-desktop-2.svg),
+    url(/images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: contain;
+    padding: 4em 0;   
+    
+    }
+
+
+.section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+.section-content div{
+    width: 40%;
+
+}
+
+.reverse .content-img{
+    order:1;
+}
+
+.final-cta{
+    padding:8em 0;
+}
+
+.footer-section{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.footer-contact{
+    order:-1;
+    width: 35%;
+}
+
+.footer-newsletter{
+    width: 50%;
+}
+
+
+}
